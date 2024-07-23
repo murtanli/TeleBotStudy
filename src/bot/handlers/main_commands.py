@@ -17,3 +17,12 @@ async def hi_message(message: Message):
 @dp.message(Command('reg'))
 async def handle_registration(message: Message, state: FSMContext):
     await start_registration(message, state)
+
+
+@dp.message(Command('help'))
+async def help_commnd(message: Message):
+    await message.answer(
+        "📝 Вот список команд:\n"
+        "• <b>Регистрация</b> - <a>/reg</a>\n"
+        "• <b>Если есть вопросы</b> или <b>бот работает некорректно</b>, пишите поддержке - <a>/admin</a>\n"
+    )
