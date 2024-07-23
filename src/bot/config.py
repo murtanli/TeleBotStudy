@@ -1,5 +1,2 @@
 import os
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "7387336312:AAEq2oq7ycwxNM0XnF9Tzv_X4fjiacawmYE")
-
-LOGGING_LEVEL = os.getenv("LOGGING_LEVEL", "INFO")
